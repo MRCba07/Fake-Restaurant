@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  /* Here I will put color definitions */
+  --bg-color: white;
+  --border-color: black;
+  --active-bg-color: green;
+
+  --content-bg-color: gray;
+  --menu-bg-color: brown;
+  --menu-border-color: black;
+  --text-color: black;
+  --menu-text-color: white;
+}
+
+/***************************
+ * DESIGN FOR MOBILE FIRST *
+ ***************************/
+
+nav {
+  margin: 2rem auto 0px auto;
+  width: clamp(400px, 90%, 900px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  padding: 3rem 2.5rem;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-radius: 10px 10px 0px 0px;
+
+  background-color: var(--content-bg-color);
+
+  font-size: 2rem;
+}
+
+nav ul li.active {
+  background-color: var(--active-bg-color);
+}
+
+#content {
+  border: 1px solid var(--border-color);
+  border-top: 0px solid var(--content-bg-color);
+  padding: 2rem 2rem 4rem 2rem;
+  margin: 0px auto 2rem auto;
+  width: clamp(400px, 90%, 900px);
+  min-height: 80vh;
+  background-color: var(--content-bg-color);
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+content h2 {
+  font-size: 3rem;
+  margin: 1rem 0px;
+}
+
+#content img {
+  display: block;
+  margin: 2rem auto;
+}
+
+.menu {
+  background-color: var(--menu-bg-color);
+  color: var(--menu-color);
+  border: 1px solid var(--menu-border-color);
+  border-radius: 10px;
+
+  padding: 1rem;
+
+}
+
+.menu article {
+  border-collapse: collapse;
+  border: 2px solid var(--menu-border-color);
+  padding: 1rem;
+}
+
+h1:not(.title) {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.contact h2 {
+  margin: 2rem 0;
+}
+
+.contact p {
+  font-size: 2rem;
+}
