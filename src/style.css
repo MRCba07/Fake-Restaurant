@@ -95,7 +95,8 @@ content h2 {
 
 h1:not(.title) {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
+  padding: 2rem;
 }
 
 .contact h2 {
